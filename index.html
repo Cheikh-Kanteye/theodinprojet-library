@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Library | The Odin Project</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container flex items-center">
+        <a href="/" class="logo">Book<span>Studio</span></a>
+      </div>
+    </nav>
+    <main>
+      <section class="container flex">
+        <form action="" class="flex items-center gap-0">
+          <input type="search" placeholder="Search book" />
+          <input type="button" value="Search" />
+        </form>
+
+        <div class="books">
+          <ul class="book-list flex"></ul>
+        </div>
+
+        <div class="modal">
+          <form action="" class="flex">
+            <div class="close">&#x1F5D9;</div>
+            <div class="form-group">
+              <label for="">Title</label>
+              <input
+                type="text"
+                name="title"
+                id="title"
+                placeholder="The Hobbi"
+              />
+            </div>
+            <div class="form-group">
+              <label for="">Author</label>
+              <input
+                type="text"
+                name="author"
+                id="author"
+                placeholder="J.R.R. Tolkien"
+              />
+            </div>
+            <div class="form-group">
+              <label for="">Pages</label>
+              <input type="number" name="pages" id="pages" placeholder="295" />
+            </div>
+
+            <input
+              type="button"
+              onclick="addBookToLibrary()"
+              value="Add book"
+            />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
